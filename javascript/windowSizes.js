@@ -1,8 +1,10 @@
 
+//Function to get the width of the viewport
 function getScreenWidth(){
   return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 }
 
+//Function to get the height of the viewport
 function getScreenHeight(){
   return Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 }

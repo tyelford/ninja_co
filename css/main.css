@@ -99,6 +99,7 @@ html, body{
   background-image: url(../img/topImage2.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   left: 0;
   background-color: #BBB;
