@@ -23,9 +23,7 @@ html, body{
 
 #saw{
   position: relative;
-  float:left;
-  width: 213px;
-  height: 225px;
+  max-width: 213px;
   z-index: 10;
   -webkit-animation: spin 5s 1 linear;
   -moz-animation: spin 5s 1 linear;
@@ -41,23 +39,34 @@ html, body{
 }
 
 #ninja{
-  position: absolute;
-  top: 55px;
-  left: 15px;
-  width: 168px;
-  height: 85px;
+  position: relative;
+  top: -175px;
+  left: 20px;
+  max-width: 165px;
   z-index:11;
 }
 
 
 /* Header Menu */
-#header{
-  position: absolute;
+#fakeHeader{
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 80px;
   background-color: #DDD;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 6;
+}
+
+#header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: none;
   overflow: hidden;
   z-index: 6;
 }
@@ -97,6 +106,8 @@ html, body{
 #topImage{
   position: absolute;
   background-image: url(../img/topImage2.jpg);
+  max-width: 100%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,4 +143,17 @@ html, body{
   left: 0;
   background-color: #AAA;
   z-index: 5; 
+}
+
+
+/*************/
+/*Mobile CSS*/
+/*768px and above will be desktop all else will be mobile*/
+
+/* Mobile ----------- */
+@media (max-width : 768px) {
+  #saw{
+    width: 100px;
+    height: 100px;
+  }
 }

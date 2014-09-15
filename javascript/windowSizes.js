@@ -46,7 +46,7 @@ function goToContact(){
 }
 
 
-$( document ).ready(function() {
+$(document).ready(function() {
   
   //Find the size of the viewPort
   var w = getScreenWidth();

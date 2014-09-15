@@ -17,6 +17,7 @@
     
     <!-- JavaScripts -->
     <script src='javascript/windowSizes.js'></script>
+    <script src='javascript/scroll.js'></script>
     
     
  
@@ -40,6 +41,8 @@
         <img id='saw' src='img/Saw_only.png' />
         <img id='ninja' src='img/Saw_ninja.png' />
       </div>
+      
+      <div id='fakeHeader'></div>
       
       <div id='header'>
         <ul id='leftList'>
