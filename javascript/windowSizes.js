@@ -13,7 +13,7 @@ function goToAbout(){
    // $('#newsSection').scrollView();
    var h = getScreenHeight();
    $('html, body').animate({
-    scrollTop: h,
+    scrollTop: h - 30,
     scrollLeft: 0
   }, 1000);
 }
@@ -22,7 +22,7 @@ function goToOurWork(){
    // $('#newsSection').scrollView();
    var h = getScreenHeight();
    $('html, body').animate({
-    scrollTop: 2 * h,
+    scrollTop: 2 * h - 30,
     scrollLeft: 0
   }, 1000);
 }
@@ -31,7 +31,7 @@ function goToNews(){
    // $('#newsSection').scrollView();
    var h = getScreenHeight();
    $('html, body').animate({
-    scrollTop: 3 * h,
+    scrollTop: 3 * h - 30,
     scrollLeft: 0
   }, 1000);
 }
@@ -40,7 +40,7 @@ function goToContact(){
    // $('#newsSection').scrollView();
    var h = getScreenHeight();
    $('html, body').animate({
-    scrollTop: 4 * h,
+    scrollTop: 4 * h - 30,
     scrollLeft: 0
   }, 1000);
 }

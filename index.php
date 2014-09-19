@@ -73,7 +73,10 @@
       </div>
       
       <div id='contactSection' >
-        <h1>Contact</h1>
+        <h1 align='center'>Send us a Message</h1>
+        <form>
+          
+        </form>
       </div>
       
     </div> <!-- END wrapper -->
