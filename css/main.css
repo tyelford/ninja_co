@@ -145,6 +145,22 @@ html, body{
   z-index: 5; 
 }
 
+/* Contact Us Form */
+#contactForm{
+  margin-left: 30%;
+}
+
+#contactForm label{
+  
+}
+
+#contactForm input[type='text'], #contactForm input[type='file']{
+
+}
+#contactForm textarea{
+  height: 50px;
+}
+
 
 /*************/
 /*Mobile CSS*/

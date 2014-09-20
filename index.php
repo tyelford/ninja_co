@@ -74,9 +74,21 @@
       
       <div id='contactSection' >
         <h1 align='center'>Send us a Message</h1>
-        <form>
-          
-        </form>
+        <div id='contactForm'>
+          <form>
+            <label for='name'>Full Name:</label><br />
+            <input type='text' id='name' /><br />
+            <label for='phone'>Phone Number:</label><br />
+            <input type='text' id='phone'/><br />
+            <label for='email'>Email:</label><br />
+            <input type='text' id='email'/><br />
+            <label for='message'>Message:</label><br />
+            <textarea id='message'></textarea><br />
+            <label for='drawings'>Send us a plan</label><br />
+            <input type='file' accept="image/*;capture=camera" /><br />
+            <input type='submit' id='submit' value='Submit' />
+          </form>
+        </div>
       </div>
       
     </div> <!-- END wrapper -->
