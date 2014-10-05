@@ -10,7 +10,8 @@
     <!-- Google Web Font - Open Sans -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     <!-- jQuery from Google CDN -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+    <script src='javascript/jquery211.js'></script>
     
     <!-- Style Sheets -->
     <link href='css/main.css' rel='stylesheet' />
@@ -61,11 +62,34 @@
       </div>
       
       <div id='aboutSection' >
-        <h1>About</h1>
-      </div>
+        <h1 align='center'>About</h1>
+        
+        <div align='center' id='jakeAbout'>
+          <div id='jakeAboutPicture'>
+          </div>
+          <div id='jakeAboutTitle'>  <!--<img src='img/jakePhoto.png' />-->
+            <h2>Jake Elford</h2>
+           </div>
+          
+          
+        </div>
+        
+        <div align='center' id='nickAbout'>
+          <div id='nickAboutPicture'>
+            <!--<img src='img/jakePhoto.png' />-->
+          </div>
+          <div id='nickAboutTitle'>
+            <h2>Nick Switzer</h2>
+          </div>
+        </div>
+      </div> <!--End of About Section -->
       
       <div id='ourWorkSection' >
-        <h1>Our Work</h1>
+        <h1 align='center'>Our Work</h1>
+        
+        <div id='workSlideShow'>
+          
+        </div>
       </div>
       
       <div id='newsSection' >
@@ -89,7 +113,7 @@
             <input type='submit' id='submit' value='Submit' />
           </form>
         </div>
-      </div>
+      </div> <!-- END of Contact Section -->
       
     </div> <!-- END wrapper -->
   </body>

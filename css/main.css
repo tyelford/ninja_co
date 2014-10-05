@@ -145,6 +145,62 @@ html, body{
   z-index: 5; 
 }
 
+/*About Section*/
+#aboutSection{
+}
+
+#jakeAbout{
+  float: left;
+  margin-left: 20%;
+  /*border: thin solid black;*/
+  width: 25%;
+}
+
+#nickAbout{
+  float: right;
+  margin-right: 20%;
+  /*border: thin solid black;*/
+  width: 25%;
+}
+
+#jakeAboutPicture{
+  width: 272px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 328px;
+  border-radius: 10px;
+  background-image: url('../img/jakePhoto.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+#nickAboutPicture{
+  width: 272px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 328px;
+  border-radius: 10px;
+  background-image: url('../img/jakePhoto.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+#jakeAboutPicture:hover, #nickAboutPicture:hover{ 
+  background-position: bottom left; 
+}
+
+/* Our Work Section */
+#workSection{
+  
+}
+
+#workSlideShow{
+  width: 80%;
+  border: thin solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Contact Us Form */
 #contactForm{
   margin-left: 30%;
