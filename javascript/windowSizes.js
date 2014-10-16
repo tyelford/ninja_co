@@ -45,6 +45,14 @@ function goToContact(){
   }, 1000);
 }
 
+function goToTop(){
+  var h = getScreenHeight();
+  $('html, body').animate({
+    scrollTop: 0,
+    scrollLeft: 0
+  }, 1000);
+}
+
 
 $(document).ready(function() {
   

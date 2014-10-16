@@ -33,10 +33,15 @@ $(document).ready(function(){
         $('#saw').stop().animate({
           opacity: 0
         }, 600);
-        $('#ninja').stop().animate({
+        $('#allTextOnly').stop().animate({
           opacity: 0
-        }, 600);    
+        }, 300); 
+        $('#allTextOnly').css('z-index',0);
+        $('#saw').css('z-index',0);    
       }
+      
+      //Put the NinjaOnly photo out
+      //$('#ninjaOnly').show(600);
       
       
       //Shrink the header text
@@ -64,10 +69,15 @@ $(document).ready(function(){
         $('#saw').stop().animate({
           opacity: 100
         }, 600);
-        $('#ninja').stop().animate({
-          opactiy: 100
+        $('#allTextOnly').stop().animate({
+          opacity: 100
         }, 600);
+        $('#allTextOnly').css('z-index',11);
+        $('#saw').css('z-index',10);  
       }
+      
+      //Put the NinjaOnly photo away
+      //$('#ninjaOnly').hide();
       
       //Encrease the size of the header text
       $('#header').css('font-size', '1em');

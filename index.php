@@ -40,11 +40,16 @@
     <div id='wrapper'>
     
       <div id='logo'>
-        <img id='saw' src='img/Saw_only.png' />
-        <img id='ninja' src='img/Saw_ninja.png' />
+        <img id='saw' src='img/logo/SawOnly_small.png' />
+        <img id='allTextOnly' src='img/logo/AllTextOnly_small.png' />
       </div>
       
-      <div id='fakeHeader'></div>
+      <div id='fakeHeader'>
+      </div>
+      
+      <div align='center' id='ninjaOnly'>
+        <img src='img/logo/NinjaOnly_small.png' onclick='goToTop();'/>
+      </div>
       
       <div id='header'>
         <ul id='leftList'>
@@ -100,17 +105,23 @@
         <h1 align='center'>Send us a Message</h1>
         <div id='contactForm'>
           <form>
-            <label for='name'>Full Name:</label><br />
-            <input type='text' id='name' /><br />
-            <label for='phone'>Phone Number:</label><br />
-            <input type='text' id='phone'/><br />
-            <label for='email'>Email:</label><br />
-            <input type='text' id='email'/><br />
-            <label for='message'>Message:</label><br />
-            <textarea id='message'></textarea><br />
-            <label for='drawings'>Send us a plan</label><br />
-            <input type='file' accept="image/*;capture=camera" /><br />
-            <input type='submit' id='submit' value='Submit' />
+            <div id='leftForm'>
+              <label for='name'>Name</label><br />
+              <input type='text' id='name' /><br />
+              <label for='phone'>Number</label><br />
+              <input type='text' id='phone'/><br />
+              <label for='email'>Email</label><br />
+              <input type='text' id='email'/>
+            </div>
+            <div id='rightForm'>
+              <label for='message'>Message</label><br />
+              <textarea id='message'></textarea>
+            </div>
+            <div id='bottomForm'>
+              <label for='drawings'>Send us a plan</label><br />
+              <input type='file' accept='image/*,application/pdf;capture=camera' /><br />
+              <input type='submit' id='submit' value='Submit It' style='margin-top: 10px;' />
+            </div>
           </form>
         </div>
       </div> <!-- END of Contact Section -->
