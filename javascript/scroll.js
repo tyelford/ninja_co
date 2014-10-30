@@ -30,7 +30,7 @@ $(document).ready(function(){
           top: '-=9'
         }, 600);  
         //Animate the logo
-        $('#saw').stop().animate({
+        $('#saw').animate({
           opacity: 0
         }, 600);
         $('#allTextOnly').stop().animate({
@@ -66,9 +66,12 @@ $(document).ready(function(){
           top: '+=9'
         }, 600);
         //Animate the saw
-        $('#saw').stop().animate({
+        /*
+        $('#saw').animate({
           opacity: 100
         }, 600);
+        */
+       $('#saw').fadeTo('slow', 100);
         $('#allTextOnly').stop().animate({
           opacity: 100
         }, 600);
@@ -84,3 +87,4 @@ $(document).ready(function(){
     }
   });
 });
+

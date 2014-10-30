@@ -7,16 +7,15 @@ html, body{
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   z-index: -9999;
 }
 
 /* Saw Logo */
 #logo{
-  position: relative;
+  position: absolute;
   top: -50px;
   width: 213px;
+  height: 213px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -115,10 +114,10 @@ html, body{
 /* Top Image */
 
 #topImage{
-  position: absolute;
+  position: relative;
+  float: left;
   background-image: url(../img/topImage2.jpg);
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -129,28 +128,33 @@ html, body{
 }
 
 #aboutSection{
-  position: absolute;
+  /*position: relative;*/
+  float: left;
+  width: 100%;
   left: 0;
   background-color: #CCC;
   z-index: 5;
 }
 
 #ourWorkSection{
-  position: absolute;
+  float: left;
+  width: 100%;
   left: 0;
   background-color: #FFF;
   z-index: 5;
 }
 
 #newsSection{
-  position: absolute;
+  float: left;
+  width: 100%;
   left: 0;
   background-color: #444;
   z-index: 5;
 }
 
 #contactSection{
-  position: absolute;
+  float: left;
+  width: 100%;
   left: 0;
   background-color: #AAA;
   z-index: 5; 
@@ -200,16 +204,30 @@ html, body{
   background-position: bottom left; 
 }
 
+#aboutText{
+  float: left;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: bold;
+}
+
 /* Our Work Section */
 #workSection{
   
 }
 
+
 #workSlideShow{
   width: 80%;
-  border: thin solid black;
+  border: none;
   margin-left: auto;
   margin-right: auto;
+}
+
+.ourWorkText{
+  margin-left: 15%;
+  margin-right: 15%;
+  font-weight: bold;
 }
 
 /* Contact Us Form */
@@ -253,15 +271,54 @@ html, body{
   width: 300px;
 }
 
+#contactText{
+  float: left;
+  margin-top: 30px;
+  margin-left:20%;
+  margin-right:20%;
+  font-weight: bold;
+}
+
+#jakeJoke{
+  position: fixed;
+  background-image: url('../img/ponch.jpg');
+  width: 400px;
+  height: 573px;
+  top: 20px;
+  left: 20px;
+  z-index: 12345;
+}
+
+#jakeJoke2{
+  position: fixed;
+  background-image: url('../img/ponch.jpg');
+  width: 400px;
+  height: 573px;
+  top: 20px;
+  left: 700px;
+  z-index: 12346;
+}
+
+#jakeJoke3{
+  position: fixed;
+  background-image: url('../img/ponch.jpg');
+  width: 400px;
+  height: 573px;
+  top: 20px;
+  left: 350px;
+  z-index: 12347;
+}
+
 
 /*************/
 /*Mobile CSS*/
 /*768px and above will be desktop all else will be mobile*/
 
-/* Mobile ----------- */
+/* Mobile ----------- 
 @media (max-width : 768px) {
   #saw{
     width: 100px;
     height: 100px;
   }
 }
+*/
