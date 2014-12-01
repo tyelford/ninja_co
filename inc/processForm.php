@@ -11,12 +11,17 @@
    * Plans field: plans
    */
 
+  /*
+   * Sanatize Input Strings
+   * addslashes();
+   */   
+   
   //Handle the form 
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = $_POST[name];
-    $phone = $_POST[phone];
-    $email = $_POST[email];
-    $message = $_POST[message];
+    $name = addslashes($_POST[name]);
+    $phone = addslashes($_POST[phone]);
+    $email = addslashes($_POST[email]);
+    $message = addslashes($_POST[message]);
     $plans = $_POST[plans];
     
     $name = strtoupper($name);
@@ -30,7 +35,31 @@
     
     }
     
-    //echo "<script> alert('$name');</script>";
+    //Create Message to Send
+    $emailMessage = 'You got a message from the website!' . "\r\n" .
+               "\r\n" .
+               'From: ' . $name . ' (' . $email . ')' . "\r\n" .
+               'Phone them Back: ' . $phone . "\r\n" .
+               'Message: ' . $message .  "\r\n";
+               
+    //Message sent to client
+    $confirmMessage = 'Thank you for your enquiry, we will get back to you as soon as possible';
+    
+    //Headers for the email
+    $emailHeadersToClient = 'From: info@ninjaconstruction.ca' . "\r\n" .
+                  'Reply-To: info@ninjaconstruction.ca' . "\r\n" .
+                  'X-Mailer: PHP/' . phpversion();
+                  
+    $emailHeadersToNinja = 'From: info@ninjaconstruction.ca' . "\r\n" .
+                  'Reply-To: ' . $email . "\r\n" .
+                  'X-Mailer: PHP/' . phpversion();
+   
+  
+    //Send email to info@ninjaconstruction.ca  
+    mail('info@ninjaconstruction.ca', 'Message from the Website', $emailMessage, $emailHeadersToNinja);
+    
+    //Send email to confirm to client
+    mail($email, 'Thank you for your enquiry', $confirmMessage, $emailHeadersToClient);
   }
    
 ?>
