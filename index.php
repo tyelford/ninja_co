@@ -10,14 +10,14 @@
     <meta name='description' content='With over 15 years of construction experience, Ninja Construction Inc. is prepared for all of your building needs.  We specialize in residential homes, particularly single family and multi-family new builds.'>
     <meta name='keywords' content='builders, Calgary, Alberta, Ninja, Construction, experience, framing' >
       
-    <!--<meta name="viewport" content="width=device-width, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     
     <!-- Google Web Font - Open Sans -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     <!-- jQuery from Google CDN -->
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!--<script src='javascript/jquery211.js'></script>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src='javascript/jquery211.js'></script>
     
     <!-- Style Sheets -->
     <link href='css/main.css' rel='stylesheet' />
@@ -79,7 +79,7 @@
       <div id='aboutSection' >
         <h1 align='center'>About</h1>
         
-        <div align='center' id='jakeAbout'>
+        <div id='jakeAbout'>
           <div id='jakeAboutPicture'>
           </div>
           <div id='jakeAboutTitle'>  <!--<img src='img/jakePhoto.png' />-->
@@ -89,7 +89,7 @@
           
         </div>
         
-        <div align='center' id='nickAbout'>
+        <div id='nickAbout'>
           <div id='nickAboutPicture'>
             <!--<img src='img/jakePhoto.png' />-->
           </div>
@@ -111,7 +111,7 @@
         </div>
         
         <div id='workSlideShow'>
-          <ul class='bxslider'>
+          <ul class='bxslider' align='center'>
             <li><img src='img/slider/1.jpg' /></li>
             <li><img src='img/slider/2.jpg' /></li>
             <li><img src='img/slider/3.jpg' /></li>
@@ -122,7 +122,8 @@
           $(document).ready(function(){
             $('.bxslider').bxSlider({
               auto: true,
-              pager: false
+              pager: false,
+              
             });
           });
         </script>

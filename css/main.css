@@ -309,16 +309,145 @@ html, body{
   z-index: 12347;
 }
 
+#nickJoke{
+  position: fixed;
+  background-image: url('../img/nickJoke1.jpg');
+  width: 400px;
+  height: 549px;
+  top: 20px;
+  left: 20px;
+  z-index: 12345;
+}
+
+#nickJoke2{
+  position: fixed;
+  background-image: url('../img/nickJoke2.jpg');
+  width: 400px;
+  height: 536px;
+  top: 20px;
+  left: 700px;
+  z-index: 12346;
+}
+
+#nickJoke3{
+  position: fixed;
+  background-image: url('../img/nickJoke3.jpg');
+  width: 400px;
+  height: 433px;
+  top: 20px;
+  left: 350px;
+  z-index: 12347;
+}
+
+
 
 /*************/
 /*Mobile CSS*/
 /*768px and above will be desktop all else will be mobile*/
 
-/* Mobile ----------- 
+/* Mobile ----------- */
 @media (max-width : 768px) {
-  #saw{
+  /*#saw{
     width: 100px;
     height: 100px;
-  }
+  }*/
+ #wapper{
+   width: 100%;
+ }
+ 
+ #header{
+   display: none;
+ }
+ #fakeHeader{
+   display: none;
+ }
+ #logo{
+   
+ }
+ #ninjaOnly{
+   display: none;
+ }
+ 
+ 
+ 
+ /*About Section*/
+#aboutSection{
+   width: 100%;
+   margin-left: 0;
 }
-*/
+
+#jakeAbout{
+  float: left;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  /*border: thin solid black;*/
+  width: 25%;
+}
+
+#nickAbout{
+  float: left;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  /*border: thin solid black;*/
+  width: 25%;
+}
+
+#jakeAboutPicture{
+  width: 272px;
+  /*margin-left: auto;
+  margin-right: auto; */
+  height: 328px;
+  margin: 0;
+  border-radius: 10px;
+  background-image: url('../img/jakePhoto.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+#nickAboutPicture{
+  width: 272px;
+  /*margin-left: auto;
+  margin-right: auto; */
+  height: 328px;
+  margin: 0;
+  border-radius: 10px;
+  background-image: url('../img/jakePhoto.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+#jakeAboutPicture:hover, #nickAboutPicture:hover{ 
+  background-position: bottom left; 
+}
+
+#aboutText{
+  float: left;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: bold;
+}
+
+/* Contact Us Section */
+
+#contactSection{
+  margin-left: 0;
+}
+
+#contactForm{
+  margin-left: 10px;
+}
+
+#rightForm{
+  margin-left: 0;
+}
+
+#rightForm textarea{
+  width: 329px;
+}
+
+
+ 
+} /* End Mobile Media Query */
+

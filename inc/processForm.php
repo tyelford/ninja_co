@@ -32,7 +32,15 @@
       echo "<script>var jakeJoke = document.createElement('div'); jakeJoke.id = 'jakeJoke2'; document.body.appendChild(jakeJoke);</script>";
       //sleep(2);
       echo "<script>var jakeJoke = document.createElement('div'); jakeJoke.id = 'jakeJoke3'; document.body.appendChild(jakeJoke);</script>";
-    
+    }
+    if($name == "NICK IS COOL"){
+      //Easter Egg!!
+      echo "<script>window.alert('Choose Your Fantasy');</script>";
+      echo "<script>var jakeJoke = document.createElement('div'); jakeJoke.id = 'nickJoke'; document.body.appendChild(jakeJoke);</script>";
+      //sleep(2);
+      echo "<script>var jakeJoke = document.createElement('div'); jakeJoke.id = 'nickJoke2'; document.body.appendChild(jakeJoke);</script>";
+      //sleep(2);
+      echo "<script>var jakeJoke = document.createElement('div'); jakeJoke.id = 'nickJoke3'; document.body.appendChild(jakeJoke);</script>";
     }
     
     //Create Message to Send
